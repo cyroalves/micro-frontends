@@ -45,13 +45,15 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {
         home:"home@http://localhost:3000/remoteEntry.js",
-        pdp:"pqp@http://localhost:3001/remoteEntry.js",
+        pdp:"pdp@http://localhost:3001/remoteEntry.js",
         cart:"cart@http://localhost:3002/remoteEntry.js",
       },
       exposes: {
         "./Header": "./src/Header.jsx",
         "./Footer": "./src/Footer.jsx",
-        "./products": "./src/products.js"
+        "./products": "./src/products.js",
+        "./HomeContent": "./src/HomeContent.jsx",
+        "./MainLayout": "./src/MainLayout.jsx",
       },
       shared: {
         ...deps,
